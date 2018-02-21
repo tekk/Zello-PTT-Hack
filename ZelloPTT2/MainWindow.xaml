@@ -1,0 +1,24 @@
+﻿<Window x:Class="ZelloPTT2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ZelloPTT2 Hack" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.ColumnSpan="2" FontWeight="Light" Content="ZelloPTT2 Hack" FontSize="30"></Label>
+        <StackPanel Name="ImgStackPanel" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"></StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <TextBlock Name="Hits" Foreground="Black" FontSize="20" Margin="5" Text="Hits: 0"></TextBlock>
+            <TextBlock Name="PTT" Foreground="Black" FontSize="20" Margin="5" Text="PTT"></TextBlock>
+            <Label Content="COM Ports" FontWeight="Bold"></Label>
+            <ComboBox Name="COMPorts" Margin="5" SelectionChanged="COMPorts_SelectionChanged"></ComboBox>
+        </StackPanel>
+    </Grid>
+</Window>
